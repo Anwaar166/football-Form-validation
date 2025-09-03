@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Football Registration Form </title>
+    <meta property="og:name" content="Football Registration 2025 | Register Now">
+    <meta property="og:description" content="Join the Football Registration Form 2025 for players who want to participate voluntarily. Sign up online to be part of the game and showcase your skills.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Icons CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="formFirstSEction">
+                <div class="imageBox">
+                    <img src="image rough-Picsart-BackgroundRemover.jpg" alt="">
+                </div>
+                <div class="textBox">
+                    <p>Football Registration Form</p>
+                    <h2>Register to the football team below</h2>
+                </div>
+            </div>
+            <div class="FORM">
+                <form action="">
+                    <div class="fullFieldBox">
+                        <h3>Player's Name and CNIC</h3>
+                        <div class="FieldBox">
+                            <div class="NameFBox">
+                                <p>Full Name</p>
+                                <input type="text" name="fname" id="fname" placeholder="Enter full Name">
+                            </div>
+                            <div class="NameLBox">
+                                <p>CNIC</p>
+                                <input type="number" name="cnic" id="cnic" placeholder="Enter your Cnic">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fullFieldBox">
+                        <h3>Date of Birth</h3>
+                        <div class="FieldBox">
+                            <div class="DOBBox">
+                                <p>Date</p>
+                                <input type="date" name="Birth" id="Birth" placeholder="Enter First Name">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fullFieldBox">
+                        <h3>Home Address</h3>
+                        <div class="FieldBox">
+                            <div class="strAddBox">
+                                <p>Street Address</p>
+                                <input type="text" name="lane1" id="lane1" placeholder="Enter your Address">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fullFieldBox">
+                        <div class="FieldBox MainCityAreas">
+                            <div class="cityBox">
+                                <p>City</p>
+                                <select name="city" id="city">
+                                    <option value="kamera">Kamera</option>
+                                    <option value="attock" selected>Attock City</option>
+                                </select>
+                            </div>
+
+                            <div class="AreaBox">
+                                <p id="AreaPar">Main Area</p>
+                                <select name="MainAreas" id="Areas">
+                                </select>
+                            </div>
+                        </div>
+                        <small id="erorrMessageArea"></small>
+                    </div>
+                     <div class="fullFieldBox">
+                        <div class="FieldBox">
+                            <div class="strAddBox">
+                                <p>Postal / Zip Code (<small> "you can check from here: <a href="https://www.pakpost.gov.pk/postcodes.php">Postal Code finder</a></small>")</p>
+                                <input type="number" name="zipCode" id="zipCode" placeholder="Enter postal or zip code">
+                            </div>
+                        </div>
+                    </div>
+                     <div class="fullFieldBox genderFullBox">
+                        <h3>Gender</h3>
+                        <div class="FieldBox" id="genderMessage">
+                            <div class="genderBox">
+                               <div class="genderfBox"><input type="radio" name="gender" value="Male"><h2>Male</h2></div>
+                               <div class="genderfBox"><input type="radio" name="gender" value="Female"><h2>Female</h2></div>
+                              
+                            </div>
+                         
+                        </div>
+                          <small class="genderMessage"></small>
+                          
+                    </div>
+                    
+                    <!-- add upload file here- -->
+                     <div class="fullFieldBox">
+  <div class="  ">
+    <h3>Please upload your photo</h3>
+      <div class="fileBox" id="drop-zone">
+        <div id="iamgeChange"><i class="bi bi-cloud-upload-fill"></i></div>
+        <p><strong>Browse Files</strong></p>
+        <small style="display: block;">Drag and drop files here</small>
+        <input type="file" name="fileUpload" id="fileUpload" hidden >
+      </div>
+      <div class="messLink">
+      <div id="fileList"></div>
+      <div id="anchorTag"></div>
+
+      </div>
+  </div>
+</div>
+                        <!--  -->
+                      <div class="fullFieldBox">
+                        <h3>Player E-mail</h3>
+                        <div class="FieldBox">
+                            <div class="DOBBox">
+                                <p>E-mail</p>
+                                <input type="email" name="email" id="email" placeholder="example@example.com">
+                            </div>
+                        </div>
+                    </div>
+
+                      <div class="fullFieldBox">
+                        <h3>Offense or Defence</h3>
+                        <div class="FieldBox" id="offBox">
+                            <div class="genderBox OffenseBox">
+                               <div class="genderfBox offensefBox"><input type="radio" name="off/def"><h2>Offense</h2></div>
+                               <div class="genderfBox offensefBox"><input type="radio" name="off/def"><h2>Defense</h2></div>
+                               <div class="genderfBox offensefBox"><input type="radio" name="off/def"><h2>Don't Know</h2></div>
+
+                              <small class="offenseMessage"></small>
+                            </div>  
+                        </div>
+                    </div>
+                      <div class="fullFieldBox">
+                        <h3>Height</h3>
+                        <div class="FieldBox">
+                            <div class="DOBBox">
+                                <p>Enter Height(<small><a href="https://www.google.com/search?q=height+inches+to+cm+converter&oq=&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxjqAhitBjIMCAAQIxgnGOoCGK0GMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMgkIBBAjGCcY6gIyCQgFECMYJxjqAjIJCAYQIxgnGOoCMgkIBxAjGCcY6gLSAQoxODkzOTRqMGo3qAIIsAIB8QXJVmAvpQBnMw&sourceid=chrome&ie=UTF-8" target="_blank">Convert height to cm</a></small>)</p>
+                                <input type="number" name="height" id="height" placeholder="Enter height in cm">
+                            </div>
+                        </div>
+                    </div>
+                      <div class="fullFieldBox lastBox">
+                        <h3>Weight</h3>
+                        <div class="FieldBox">
+                            <div class="DOBBox">
+                                <p>Enter Weight</p>
+                                <input type="number" name="Weight" id="Weight" placeholder="eg:80">
+                            </div>
+                        </div>
+                    </div>
+                    <strong id="bmiCalculation"></strong>
+                    <div class="button">
+                      <button id="btn">Submit</button>
+                    </div>
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
